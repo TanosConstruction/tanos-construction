@@ -12,13 +12,14 @@
   <header class="navbar">
     <div class="navbar-container">
       <a href="index.html" class="logo" style="display:flex;align-items:center;gap:0.5rem;">
-        <img src="images/Logo%20Design.png" alt="Tano's Construction logo" style="height:40px;">
+        <img src="images/Logo%20Design.png" alt="Tano's Construction logo">
       </a>
       <nav>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="projects.html">Projects</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -40,12 +41,15 @@
         <div class="contact-info" style="flex:1 1 300px;">
           <h3>Contact Details</h3>
           <p><strong>Phone:</strong> <a href="tel:5108809246">510‑880‑9246</a></p>
-          <p><strong>Email:</strong> <a href="mailto:Tanos1Construction@yahoo.com">Tanos1Construction@yahoo.com</a></p>
+          <p><strong>Email:</strong> Tanos1Construction@yahoo.com</p>
           <p><strong>Service Area:</strong> San Francisco & Bay Area</p>
           <p>We are available Monday through Friday, 8 AM – 5 PM. After‑hours appointments are available by request.</p>
         </div>
         <div class="contact-form" style="flex:1 1 400px;">
-          <form method="POST" action="mailto:Tanos1Construction@yahoo.com" enctype="text/plain">
+          <!-- Use a form service to handle submissions instead of mailto. FormSubmit.co will send a message to your email without requiring users to have a mail client installed. -->
+          <form method="POST" action="https://formsubmit.co/Tanos1Construction@yahoo.com">
+            <input type="hidden" name="_subject" value="New Contact Form Submission">
+            <input type="hidden" name="_captcha" value="false">
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" required>

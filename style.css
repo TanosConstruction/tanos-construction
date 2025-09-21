@@ -58,6 +58,18 @@ p {
   text-decoration: none;
 }
 
+/* Adjust the logo image size. Increase the height for better visibility across desktop and mobile. */
+.navbar .logo img {
+  /* Increase the logo height for better visibility on larger screens */
+  height: 80px;
+}
+@media (max-width: 600px) {
+  /* On smaller screens, shrink the logo slightly to maintain a balanced header */
+  .navbar .logo img {
+    height: 60px;
+  }
+}
+
 .nav-links {
   list-style: none;
   display: flex;
