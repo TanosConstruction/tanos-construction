@@ -109,6 +109,9 @@ p {
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  /* Enhance the hero tagline: use a serif typeface for a craftsman feel and ensure the text is white for contrast */
+  font-family: Georgia, "Times New Roman", serif;
+  color: #ffffff;
 }
 
 .hero p {
